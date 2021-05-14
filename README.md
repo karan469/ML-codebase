@@ -7,3 +7,4 @@ Independent machine learning projects.
 
 ## Resources
 1. How to encode categorical features properly: https://www.analyticsvidhya.com/blog/2020/08/types-of-categorical-data-encoding/ | https://towardsdatascience.com/data-normalization-with-pandas-and-scikit-learn-7c1cc6ed6475
+2. Plot feature importance after training on XGBoost: https://machinelearningmastery.com/feature-importance-and-feature-selection-with-xgboost-in-python/
