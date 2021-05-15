@@ -48,5 +48,5 @@ temp.plot.density()
 ```
 Here, cloud_level is the categorical column and windmill_generated_power(kW/h) is the target column.
 
-![image](https://user-images.githubusercontent.com/33158202/118375377-e38d7d80-b5de-11eb-983d-150fe9ba148c.png)
+![image](https://user-images.githubusercontent.com/33158202/118375445-5565c700-b5df-11eb-9123-2508128bcbc6.png)
 
