@@ -1,4 +1,4 @@
-# EDA (Explainatory Detailed Analysis
+# EDA (Explainatory Detailed Analysis)
 
 ### Lower Left Triangle correlation matrix
 ```
