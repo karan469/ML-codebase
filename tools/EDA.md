@@ -38,3 +38,14 @@ from pandas_profiling import ProfileReport
 profile = ProfileReport(train)
 profile
 ```
+
+### Density plots for different categorical values
+```
+temp = df_train.pivot(columns='cloud_level',
+                     values='windmill_generated_power(kW/h)')
+temp.columns = ['Null', 'Extremely Low', 'Low', 'Medium']
+temp.plot.density()
+```
+Here, cloud_level is the categorical column and windmill_generated_power(kW/h) is the target column.
+
+![image](https://user-images.githubusercontent.com/33158202/118375257-4fbbb180-b5de-11eb-9917-eac7e9f13b4a.png)
