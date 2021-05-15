@@ -41,7 +41,7 @@ profile
 
 ### Density plots for different categorical values
 ```
-temp = df_train.pivot(columns='cloud_level',
+temp = df_train.pivot(columns='turbine_status',
                      values='windmill_generated_power(kW/h)')
 temp.plot.density()
 ```
