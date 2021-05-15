@@ -43,7 +43,6 @@ profile
 ```
 temp = df_train.pivot(columns='cloud_level',
                      values='windmill_generated_power(kW/h)')
-temp.columns = ['Null', 'Extremely Low', 'Low', 'Medium']
 temp.plot.density()
 ```
 Here, cloud_level is the categorical column and windmill_generated_power(kW/h) is the target column.
