@@ -1,4 +1,9 @@
-# Concepts related to RNN
+# Concepts related to Natural Language Processing
+
+In usual Natural Language problems, such as text classification or speech translation, there are two components in the machine learning models.
+
+1. **Embedding Layer**: This is a dictionary which maps tokens to their respective feature vectors. This is usully called word-to-vec phase. There are many frameworks that learn and generate word embeddings, such as, *Fasttext, Blazing Text or just normal tensorflow embedding layers* which have some optimizational difference. These algorithms in their core use either of two approaches: *CBOW or Skip-gram*.
+2. **RNN or GRU or LSTM**: These layers use the word embeddings. They contains recurrent neural nodes which can take variable number of tokens as input.
 
 ## RNN
 1. Can take variable length of input
