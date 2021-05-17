@@ -5,21 +5,21 @@ In usual Natural Language problems, such as text classification or speech transl
 1. **Embedding Layer**: This is a dictionary which maps tokens to their respective feature vectors. This is usully called word-to-vec phase. There are many frameworks that learn and generate word embeddings, such as, *Fasttext, Blazing Text or just normal tensorflow embedding layers* which have some optimizational difference. These algorithms in their core use either of two approaches: *CBOW or Skip-gram*.
 2. **RNN or GRU or LSTM**: These layers use the word embeddings. They contains recurrent neural nodes which can take variable number of tokens as input.
 
-## RNN
+## 1. RNN
 1. Can take variable length of input
 2. Can use multiple input vectors + output is influenced by, not just weights applied to inputs, but also by <ins>hidden state vectors</ins>.
 
 ![image](https://user-images.githubusercontent.com/33158202/118369052-84207500-b5c0-11eb-8f02-8a854dae2571.png)
 
-### Parameter sharing
+### 1.1 Parameter sharing
 Same weights are applied to different input.
 Reason: If we have different weights for different input (vanilla input), then we ought to have fixed input length.
 
-### Hidden state
+### 1.2 Hidden state
 Tries to feed forward the "context" from previous words. This keeps on changing after forwarding with each input.
 [img]
 
-### Deep RNN
+### 1.3 Deep RNN
 Choices:
 1. Increase number of hidden states
 2. Add non-linear hidden layers<br>
@@ -27,7 +27,7 @@ Choices:
 ![image](https://user-images.githubusercontent.com/33158202/118368504-f04ea900-b5bf-11eb-8af1-6fbcfad78241.png)
 
 
-### Biderectional RNN
+### 1.4 Biderectional RNN
 
 ![image](https://user-images.githubusercontent.com/33158202/118365727-b1b6ef80-b5bb-11eb-931b-a60778e2da78.png)
 
