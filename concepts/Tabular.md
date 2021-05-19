@@ -1,5 +1,5 @@
 # ML Concepts related to tabular datasets
-### For example, Decision Trees, Random Forests, Gradient Boosting Trees, SVM
+*For example, Decision Trees, Random Forests, Gradient Boosting Trees, SVM*
 
 ## 1. Decision Trees
 A decision tree is a tree where each node represents a feature(attribute), each link(branch) represents a decision(rule) and each leaf represents an outcome(categorical or continues value).
