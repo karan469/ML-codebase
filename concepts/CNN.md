@@ -2,5 +2,8 @@
 
 ## 1. Resnet
 
+Residual Nodes
+
 ## 2. Inception
 
+Inception module
