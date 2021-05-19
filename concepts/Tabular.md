@@ -15,6 +15,8 @@ A decision tree is a tree where each node represents a feature(attribute), each 
   3. Pick the highest gain attribute.<br>
   4. Repeat until we get the tree we desired.<br>
 
+At  each  node,  you  should  select  the  attribute  which  results  in  maximum  decrease  inthe entropy of the class variable (i.e.  has the highest mutual information with respect to the classvariable).  This problem has some attributes as integers and some as boolean.  For handling continuousattributes, you should use the following procedure.  At any given internal node of the tree, a numericalattribute is considered for a two way split by calculating the median attribute value from the datainstances coming to that node, and then computing the information gain if the data was split basedon whether the numerical value of the attribute is greater than the median or not.
+
 ## 2. Ensemble
 
 *Collection of predictors come together to give final predictions*
