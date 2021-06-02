@@ -1,5 +1,7 @@
 # ML Concepts related to tabular datasets
 *For example, Decision Trees, Random Forests, Gradient Boosting Trees, SVM*
+## Ideas
+1. Bagging with subsampling but we can penalize on dissimilarity among models too. Thus loss at each epoch equals individual loss + agreement among models.
 
 ## 1. Decision Trees
 A decision tree is a tree where each node represents a feature(attribute), each link(branch) represents a decision(rule) and each leaf represents an outcome(categorical or continues value).
