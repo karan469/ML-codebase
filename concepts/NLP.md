@@ -102,3 +102,5 @@ Algorithm:
 - Library for learning word embeddings as well as classify.
 - Facebook's algorithm. Provided 294 trained models
 
+### 2.4 ULMFiT
+![image](https://user-images.githubusercontent.com/33158202/120424286-acaeba00-c389-11eb-927c-7dd397338ad2.png)
