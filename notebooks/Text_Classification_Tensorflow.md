@@ -112,5 +112,12 @@ model.compile(loss='mse', optimizer='adam', metrics=[rmse])
 
 num_epochs = 10
 
-history = model.fit(train_padded, train_labels, batch_size=128, epochs=num_epochs, validation_data=(validation_padded, validation_labels))
+history = model.fit(train_padded, 
+                    train_labels, 
+                    batch_size=128, 
+                    epochs=num_epochs, 
+                    validation_data=(validation_padded, validation_labels))
 ```
+## UPDATE: New Tensorflow TextVectorization Layer
+
+![image](https://user-images.githubusercontent.com/33158202/121571745-0590e900-ca41-11eb-8a61-9d86f93da687.png)
