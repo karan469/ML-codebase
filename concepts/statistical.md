@@ -24,3 +24,26 @@ threshold = 1.5  # choose threshold using dendrogram or any other method (e.g. q
 
 cluster_labels = hierarchy.fcluster(hier, threshold, criterion="distance")
 ```
+
+## Boxplots and Inter Quantile Range
+Code to create boxplot for a particular column, for different labels
+```python
+sns.set(rc={'figure.figsize':(20,8)})
+sns.boxplot(x='target', y=df.columns[i], data=df)
+```
+Code to create boxplot for all columns in dataframe
+```python
+fig, ax = plt.subplots(10,1,figsize=(20,20))
+# Assuming last column is the target label
+for i in range(len(df.columns)-1):
+    sns.boxplot(x='target', y=df.columns[i], data=df, ax=ax[i])
+```
+Code snippet to remove samples with outliers in column 'AVG'
+```python
+Q1 = df['AVG'].quantile(0.25)
+Q3 = df['AVG'].quantile(0.75)
+IQR = Q3 - Q1    #IQR is interquartile range. 
+
+filter = (df['AVG'] >= Q1 - 1.5 * IQR) & (df['AVG'] <= Q3 + 1.5 *IQR)
+df.loc[filter]  
+```
