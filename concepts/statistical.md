@@ -38,6 +38,8 @@ fig, ax = plt.subplots(10,1,figsize=(20,20))
 for i in range(len(df.columns)-1):
     sns.boxplot(x='target', y=df.columns[i], data=df, ax=ax[i])
 ```
+![image](https://user-images.githubusercontent.com/33158202/128505131-0b5630aa-0c4d-4115-837a-475510df3e15.png)
+
 Code snippet to remove samples with outliers in column 'AVG'
 ```python
 Q1 = df['AVG'].quantile(0.25)
