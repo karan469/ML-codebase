@@ -1,5 +1,18 @@
 # Statistical Concepts
 
+## Normalization v/s Standardization
+1. Normalization is a rescaling of the data from the original range so that all values are within the new range of 0 and 1. <br>
+Normalization requires that you know or are able to accurately estimate the minimum and maximum observable values. You may be able to estimate these values from your available data.
+```
+y = (x-min)/(max-min)
+```
+2. Standardizing a dataset involves rescaling the distribution of values so that the mean of observed values is 0 and the standard deviation is 1.
+This can be thought of as subtracting the mean value or centering the data. <br>
+Standardization assumes that your observations fit a Gaussian distribution (bell curve) with a well-behaved mean and standard deviation. You can still standardize your data if this expectation is not met, but you may not get reliable results.
+```
+y = (x-mean)/std
+```
+
 ## Hierarchical Clustering
 When you use hierarchical clustering, be sure you define the partitioning method properly. This partitioning method is essentially how the distances between observations and clusters are calculated. I mostly use Ward's method or complete linkage, but other options might be the choice for you.
 
