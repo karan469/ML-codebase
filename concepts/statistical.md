@@ -62,3 +62,10 @@ IQR = Q3 - Q1    #IQR is interquartile range.
 filter = (df['AVG'] >= Q1 - 1.5 * IQR) & (df['AVG'] <= Q3 + 1.5 *IQR)
 df.loc[filter]  
 ```
+
+## Regularization Techniques
+
+Used to avoid overfitting by reducing the bias in the model parameters.
+
+1. Lasso Regression
+2. Ridge Regression
