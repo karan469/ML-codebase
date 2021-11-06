@@ -67,5 +67,7 @@ df.loc[filter]
 
 Used to avoid overfitting by reducing the bias in the model parameters.
 
+https://www.analyticsvidhya.com/blog/2021/05/complete-guide-to-regularization-techniques-in-machine-learning/
+
 1. Lasso Regression
 2. Ridge Regression
