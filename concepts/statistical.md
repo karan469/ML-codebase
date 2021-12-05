@@ -1,6 +1,29 @@
 # Statistical Concepts
 
-## Normalization v/s Standardization
+## 1. Linear Regression
+There are many different methods that we can apply to our linear regression model in order to make it more efficient: <br>
+- Gradient Descent - O(n^2)
+- Least Square Methods / Normal Equation methods - O(n^3)
+- SVD - O(n^3)
+- Adam's Method
+
+### 1.1 Ordinal Least Square Optimization
+- Most basic linear least square solving algorithm for estimating unknown parameters.
+- Minimizing the sum of the squares of the differences between the observed dependent variable in the given dataset and those predicted by the linear function of the independent variable.
+- Under the additional assumption that the errors are normally distributed, OLS is the maximum likelihood estimator.
+![image](https://user-images.githubusercontent.com/33158202/144732739-0bf8727b-d6cb-4495-a95c-4b993ae4aa24.png)
+
+
+## 2. Regularization Techniques
+
+Used to avoid overfitting by reducing the bias in the model parameters.
+
+https://www.analyticsvidhya.com/blog/2021/05/complete-guide-to-regularization-techniques-in-machine-learning/
+
+1. Lasso Regression
+2. Ridge Regression
+
+## 3. Normalization v/s Standardization
 1. Normalization is a rescaling of the data from the original range so that all values are within the new range of 0 and 1. <br>
 Normalization requires that you know or are able to accurately estimate the minimum and maximum observable values. You may be able to estimate these values from your available data.
 ```
@@ -13,7 +36,7 @@ Standardization assumes that your observations fit a Gaussian distribution (bell
 y = (x-mean)/std
 ```
 
-## Hierarchical Clustering
+## 4. Hierarchical Clustering
 When you use hierarchical clustering, be sure you define the partitioning method properly. This partitioning method is essentially how the distances between observations and clusters are calculated. I mostly use Ward's method or complete linkage, but other options might be the choice for you.
 
 ```python
@@ -38,7 +61,7 @@ threshold = 1.5  # choose threshold using dendrogram or any other method (e.g. q
 cluster_labels = hierarchy.fcluster(hier, threshold, criterion="distance")
 ```
 
-## Boxplots and Inter Quantile Range
+## 5. Boxplots and Inter Quantile Range
 Code to create boxplot for a particular column, for different labels
 ```python
 sns.set(rc={'figure.figsize':(20,8)})
@@ -62,12 +85,3 @@ IQR = Q3 - Q1    #IQR is interquartile range.
 filter = (df['AVG'] >= Q1 - 1.5 * IQR) & (df['AVG'] <= Q3 + 1.5 *IQR)
 df.loc[filter]  
 ```
-
-## Regularization Techniques
-
-Used to avoid overfitting by reducing the bias in the model parameters.
-
-https://www.analyticsvidhya.com/blog/2021/05/complete-guide-to-regularization-techniques-in-machine-learning/
-
-1. Lasso Regression
-2. Ridge Regression
