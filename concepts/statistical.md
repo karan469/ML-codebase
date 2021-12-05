@@ -20,8 +20,8 @@ Used to avoid overfitting by reducing the bias in the model parameters.
 
 https://www.analyticsvidhya.com/blog/2021/05/complete-guide-to-regularization-techniques-in-machine-learning/
 
-1. Lasso Regression
-2. Ridge Regression
+1. Lasso Regression - Does create a sparse model.
+2. Ridge Regression - Helps to avoid the problem of multicollinearity in datasets. Doesn't create a sparse model.
 
 ## 3. Normalization v/s Standardization
 1. Normalization is a rescaling of the data from the original range so that all values are within the new range of 0 and 1. <br>
