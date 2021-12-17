@@ -85,3 +85,8 @@ IQR = Q3 - Q1    #IQR is interquartile range.
 filter = (df['AVG'] >= Q1 - 1.5 * IQR) & (df['AVG'] <= Q3 + 1.5 *IQR)
 df.loc[filter]  
 ```
+
+## 6. K Means
+To find number of clusters, we can use heuristics such as Elbow Method.
+![image](https://user-images.githubusercontent.com/33158202/146512105-0408611b-b48c-46b6-820c-9ae0f0386ca5.png)
+
