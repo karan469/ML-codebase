@@ -103,4 +103,8 @@ Algorithm:
 - Facebook's algorithm. Provided 294 trained models
 
 ### 2.4 ULMFiT
+Steps: 
+1. [Unsupervised] General Domain Representaional Learning
+2. [Unsupervised] Discriminative Fine tuning in Step 2, using STLR (Slanted triangular learning rates)
+3. [Supervised] Fine tuning classifier 
 ![image](https://user-images.githubusercontent.com/33158202/120424286-acaeba00-c389-11eb-927c-7dd397338ad2.png)
