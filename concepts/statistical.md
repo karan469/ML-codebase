@@ -87,6 +87,6 @@ df.loc[filter]
 ```
 
 ## 6. K Means
-To find number of clusters, we can use heuristics such as Elbow Method.
+To find number of clusters, we can use heuristics such as Elbow Method. <br>
 ![image](https://user-images.githubusercontent.com/33158202/146512105-0408611b-b48c-46b6-820c-9ae0f0386ca5.png)
 
